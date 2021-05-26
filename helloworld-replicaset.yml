@@ -1,11 +1,12 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: helloworld-controller
 spec:
   replicas: 4
   selector:
-    app: helloworld
+    matchLabels:
+      app: helloworld
   template:
     metadata:
       labels:
