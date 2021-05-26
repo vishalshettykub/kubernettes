@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nodehelloworld.example.com
   labels:
-    app:helloworld
+    app: helloworld
 spec:
   containers:
   - name: k8s-demo
@@ -11,3 +11,4 @@ spec:
     ports:
     - name: nodejs-port
       containerPort: 3000
+  
